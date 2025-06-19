@@ -1,0 +1,17 @@
+[
+    {
+        "id_status": 1,
+        "nome_status": "Disponível",
+        "descricao": "Pronto para adoção"
+    },
+    {
+        "id_status": 2,
+        "nome_status": "Adotado",
+        "descricao": "Animal já adotado"
+    },
+    {
+        "id_status": 3,
+        "nome_status": "Em tratamento",
+        "descricao": "Animal está em tratamento veterinário"
+    }
+]

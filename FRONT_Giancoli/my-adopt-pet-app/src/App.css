@@ -1,0 +1,83 @@
+/* src/App.css */
+
+/* Fundo geral */
+body {
+  background: linear-gradient(135deg, #F0FFF0, #E8F5E9);
+  font-family: 'Fredoka', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Espaçamento global para não colar na NavBar fixa */
+.page-content {
+  padding-top: 100px;  /* Ajuste conforme a altura da sua NavBar */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Títulos principais (h1) */
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #2E7D32;
+  background: linear-gradient(90deg, #A5D6A7, #81C784);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 50px 50px 20px 20px;
+  position: relative;
+  max-width: 700px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+  text-shadow: 0 0 10px #81C784;
+  box-shadow: 0 0 20px rgba(129, 199, 132, 0.7);
+}
+
+/* Orelhinhas no h1 */
+h1::before,
+h1::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  width: 25px;
+  height: 25px;
+  background-color: #A5D6A7;
+  border-radius: 50%;
+}
+
+h1::before {
+  left: 40px;
+}
+
+h1::after {
+  right: 40px;
+}
+
+/* Animação global de fade-in */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade geral */
+@media (max-width: 768px) {
+  .page-content {
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+    max-width: 90%;
+  }
+}

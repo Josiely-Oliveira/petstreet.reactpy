@@ -1,0 +1,143 @@
+/* src/pages/Home.css */
+
+/* Fundo geral */
+body {
+  background: linear-gradient(135deg, #F0FFF0, #E8F5E9);
+  font-family: 'Fredoka', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Título Principal com glow ao hover */
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #2E7D32;
+  background: linear-gradient(90deg, #A5D6A7, #81C784);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 50px 50px 20px 20px;
+  position: relative;
+  max-width: 700px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, text-shadow 0.3s ease;
+}
+
+h1:hover {
+  text-shadow: 0 0 10px #81C784;
+  box-shadow: 0 0 20px rgba(129, 199, 132, 0.7);
+}
+
+/* Orelhinhas no título */
+h1::before, h1::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  width: 25px;
+  height: 25px;
+  background-color: #A5D6A7;
+  border-radius: 50%;
+}
+
+h1::before {
+  left: 40px;
+}
+
+h1::after {
+  right: 40px;
+}
+
+/* Subtítulos com patinha + confete decorativo */
+h2 {
+  text-align: center;
+  color: #388E3C;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: " 🐾";
+  font-size: 1.4em;
+  color: #66BB6A;
+}
+
+h2::before {
+  content: "🐾 🐾 🐾";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.1;
+  font-size: 2em;
+}
+
+/* Áreas de listas de cards */
+.animal-list, .publicacao-list, .usuario-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto 40px;
+  max-width: 1200px;
+  padding: 10px;
+}
+
+/* Cards: gradiente, borda, sombra e animação de entrada */
+.animal-card, .publicacao-card, .usuario-card {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border: 3px solid #A5D6A7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hover: apenas zoom suave e sombra, sem loop */
+.animal-card:hover, .publicacao-card:hover, .usuario-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+}
+
+/* Patinha flutuante decorativa no canto */
+.animal-card::before, .publicacao-card::before, .usuario-card::before {
+  content: "🐾";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  opacity: 0.08;
+}
+
+/* Animação de entrada suave */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pequena variação de delay (opcional) */
+.animal-card { animation-delay: 0.1s; }
+.publicacao-card { animation-delay: 0.2s; }
+.usuario-card { animation-delay: 0.3s; }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .animal-card, .publicacao-card, .usuario-card {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.2em;
+    max-width: 90%;
+  }
+}

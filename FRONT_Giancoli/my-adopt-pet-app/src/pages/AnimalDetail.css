@@ -1,0 +1,94 @@
+/* src/pages/AnimalDetail.css */
+
+.animal-detail-container {
+  background-color: #E8F5E9; /* Verde bem clarinho */
+  padding: 30px;
+  border-radius: 25px;
+  max-width: 700px;
+  margin: 30px auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Fredoka', Arial, sans-serif;
+}
+
+.animal-detail-container h1 {
+  text-align: center;
+  color: #1B5E20;
+  background-color: #A5D6A7;
+  padding: 15px;
+  border-radius: 40px 40px 20px 20px;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Orelhinhas no título */
+.animal-detail-container h1::before,
+.animal-detail-container h1::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #A5D6A7;
+  border-radius: 50%;
+}
+
+.animal-detail-container h1::before {
+  left: 30px;
+}
+
+.animal-detail-container h1::after {
+  right: 30px;
+}
+
+.animal-detail-info p {
+  background-color: #ffffff;
+  color: #333;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border-left: 6px solid #81C784;
+}
+
+.animal-detail-info p::before {
+  content: "🐾 ";
+}
+
+.owner-section {
+  background-color: #C8E6C9;
+  padding: 20px;
+  margin-top: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.owner-section h2 {
+  color: #2E7D32;
+  margin-bottom: 15px;
+}
+
+.owner-section p {
+  margin: 8px 0;
+  color: #333;
+}
+
+/* Animação de hover nos blocos */
+.animal-detail-info p:hover, .owner-section p:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s;
+  background-color: #f1f8e9;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .animal-detail-container {
+    padding: 20px;
+  }
+
+  .animal-detail-container h1::before,
+  .animal-detail-container h1::after {
+    top: -8px;
+    width: 16px;
+    height: 16px;
+  }
+}

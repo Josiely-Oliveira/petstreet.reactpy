@@ -1,0 +1,72 @@
+[
+    {
+        "id_publicacao": 1,
+        "titulo": "Adote o Rex - Companheiro Leal",
+        "conteudo": "Rex é um cão dócil, brincalhão e vacinado. Ideal para quem busca um amigo fiel!",
+        "data_publicacao": "2025-06-18 23:27:22",
+        "id_autor": 2,
+        "id_animal_pub": 1,
+        "visibilidade": "todos",
+        "imagem_destacada": "https://fotos.amomeupet.org/uploads/fotos/0x800_1568662224_5d7fe2d09bccd_hd.jpeg"
+    },
+    {
+        "id_publicacao": 2,
+        "titulo": "Conheça a Mimi - Uma gata encantadora",
+        "conteudo": "Mimi é tranquila, castrada e carinhosa. Pronta para encontrar um novo lar!",
+        "data_publicacao": "2025-06-18 23:27:22",
+        "id_autor": 2,
+        "id_animal_pub": 2,
+        "visibilidade": "todos",
+        "imagem_destacada": "https://gatos.plus/wp-content/uploads/2020/05/gato-siames-bebe-puro.jpg"
+    },
+    {
+        "id_publicacao": 3,
+        "titulo": "Bolinha está esperando por você!",
+        "conteudo": "Poodle animado, sociável e ótimo para conviver com crianças. Adote já!",
+        "data_publicacao": "2025-06-18 23:27:22",
+        "id_autor": 1,
+        "id_animal_pub": 4,
+        "visibilidade": "todos",
+        "imagem_destacada": "https://talktodogs.com/wp-content/uploads/2021/01/Adorable-Poodle-Pup.jpg"
+    },
+    {
+        "id_publicacao": 4,
+        "titulo": "Luna quer um lar cheio de carinho!",
+        "conteudo": "Gatinha persa, muito carinhosa e dorminhoca. Dê uma chance à Luna!",
+        "data_publicacao": "2025-06-18 23:27:22",
+        "id_autor": 2,
+        "id_animal_pub": 5,
+        "visibilidade": "todos",
+        "imagem_destacada": "https://www.dci.com.br/wp-content/uploads/2020/09/Design-sem-nome-8.jpg"
+    },
+    {
+        "id_publicacao": 5,
+        "titulo": "Adoção Responsável - Faça a diferença",
+        "conteudo": "Adotar é um ato de amor, mas é importante se preparar para dar o cuidado necessário ao seu novo amigo. Saiba tudo sobre adoção responsável!",
+        "data_publicacao": "2025-06-18 23:27:22",
+        "id_autor": 1,
+        "id_animal_pub": 3,
+        "visibilidade": "todos",
+        "imagem_destacada": "https://tse3.mm.bing.net/th?id=OIP.gttOckea63OvQINOBprIcQHaEF&pid=Api&P=0&h=180"
+    },
+    {
+        "id_publicacao": 6,
+        "titulo": "Participe da nossa Campanha de Castração!",
+        "conteudo": "Estamos promovendo uma castração gratuita para animais em situação de risco. Agende a sua participação!",
+        "data_publicacao": "2025-06-18 23:27:22",
+        "id_autor": 3,
+        "id_animal_pub": 1,
+        "visibilidade": "instituicoes",
+        "imagem_destacada": "https://tse4.mm.bing.net/th?id=OIP.3aM5SkkMkdgk8SOhnNVsSQHaEg&pid=Api&P=0&h=180"
+    },
+    {
+        "id_publicacao": 7,
+        "titulo": "Feira de Adoção no Parque Municipal!",
+        "conteudo": "Neste sábado, teremos uma feira de adoção no Parque Municipal. Venha conhecer diversos animais à procura de um lar.",
+        "data_publicacao": "2025-06-18 23:27:22",
+        "id_autor": 2,
+        "id_animal_pub": 6,
+        "visibilidade": "todos",
+        "imagem_destacada": "https://midias.gazetaonline.com.br/_midias/jpg/2019/02/06/feira_de_adocao-5990916.jpg"
+    }
+]

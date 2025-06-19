@@ -1,0 +1,75 @@
+/* src/components/AnimalCard.css */
+
+.animal-card {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border: 3px solid #A5D6A7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  color: #333;
+}
+
+/* Animação de entrada*/
+.animal-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animal-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Patinha decorativa no canto superior */
+.animal-card::before {
+  content: "🐾";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  opacity: 0.08;
+}
+
+/* Título do animal */
+.animal-card h3 {
+  margin-top: 0;
+  color: #2E7D32;
+}
+
+/* Link de detalhes */
+.animal-card a {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #66BB6A;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.animal-card a:hover {
+  background-color: #81C784;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .animal-card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,133 @@
+/* src/pages/AnimalRegistration.css */
+
+/* Fundo geral */
+body {
+  background-color: #F9FFF9;
+  font-family: 'Fredoka', Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container do formulário */
+.form-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #E8F5E9;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Título com orelhinhas */
+.form-container h2 {
+  text-align: center;
+  color: #1B5E20;
+  background-color: #A5D6A7;
+  padding: 15px;
+  border-radius: 50px 50px 20px 20px;
+  position: relative;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2::before,
+.form-container h2::after {
+  content: '';
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #A5D6A7;
+  border-radius: 50%;
+}
+
+.form-container h2::before {
+  left: 30px;
+}
+
+.form-container h2::after {
+  right: 30px;
+}
+
+/* Campos do formulário */
+form div {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Labels com patinha */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2E7D32;
+}
+
+label::before {
+  content: "🐾 ";
+}
+
+/* Inputs, Textareas e Selects */
+input[type="text"],
+input[type="date"],
+input[type="file"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #C8E6C9;
+  background-color: #ffffff;
+  color: #333; /* ← COR DE TEXTO VISÍVEL */
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #81C784;
+  box-shadow: 0 0 8px #81C784;
+  outline: none;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Upload de arquivo com borda tracejada */
+input[type="file"] {
+  padding: 8px;
+  background-color: #f9fff9;
+  border: 2px dashed #C8E6C9;
+  color: #333; /* ← Também garantir texto visível no input file */
+}
+
+/* Textarea para descrição e observações */
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Botão de envio */
+button[type="submit"] {
+  background-color: #66BB6A;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #81C784;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px;
+  }
+}
